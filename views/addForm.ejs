@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Add</title>
+</head>
+<body>
+    <div class="form-con">
+        <h3>Thêm mới sách</h3>
+        <form  method="POST" action="/" enctype="multipart/form-data">
+            <input class="form-control form-group"  type="number" name="maBao" placeholder="Ma bai bao" />
+            <input class="form-control form-group" type="text" name="tenBB" placeholder="Ten bai bao" />
+            <input class="form-control form-group" type="text" name="tenNTG" placeholder="Ten nhom tac gia" />
+            <input class="form-control form-group type="text" name="isbn" placeholder="Chi so ISBN" />
+            <input class="form-control form-group" type="number" name="soTrang" placeholder="so Trang" required/>
+            <input class="form-control form-group" type="text" name="namXB" placeholder="Nam xuat ban" pattern="[a-zA-Z]+" title="Không nhập số"/>
+            <button class="btn btn-primary form-group" type="submit">Lưu thêm mới</button>
+        </form>
+        <form method="get" action="/">
+            <button type="submit" class="btn btn-">Quay lại</button>
+        </form>
+    </div>
+</body>
+</html>
